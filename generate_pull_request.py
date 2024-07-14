@@ -10,13 +10,29 @@ headers = {
 
 url = f'https://api.github.com/repos/CarlosAndresTovar/Hackathon/pulls'
 
-text_pull = str(input('Ingrese el titulo del Pull request: '))
+def validate_text():
+    result = False
+    text_pull = ''
+    while result == False:
+        text_pull = str(input('Ingrese el titulo del Pull request: '))
+        if text_pull:
+            if re.match(r'^[a-zA-Z]{6,} #\d+$', text_pull):
+                result = True
+            else:
+                print('''
+                      Esta mal formada las estructura del titulo, tiene que tener esta forma; Ejemplo #1234
+                      ''')
+                result = False
+    return text_pull
+
+title = validate_text()
+
 origin = str(input('Ingrese la rama origen: '))
 destination = str(input('Ingrese la rama destino: '))
 
 data = {
-    'title': text_pull,
-    'body': text_pull,
+    'title': title,
+    'body': '',
     'head': origin,
     'base': destination
 }
