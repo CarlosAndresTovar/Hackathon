@@ -1,8 +1,4 @@
 import requests
-from dotenv import load_dotenv
-import os
-
-load_dotenv()
 
 TOKEN = "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"
 
