@@ -21,7 +21,7 @@ mostrar_menu() {
 manejar_opcion() {
     case $1 in
         1) echo "Listando ramas y generando archivo...\n"
-            python3 generate_file_branch.py
+            sh list_branches.sh
            echo "";;
         2) echo "Buscando ramas a eliminar..."
            echo ""
