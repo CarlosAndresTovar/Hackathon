@@ -10,7 +10,7 @@ mostrar_menu() {
     echo ""
     echo "1. Listar ramas y generar archivo plano"
     echo "2. Eliminar ramas no tengan cambios hace mas de 2 dias y no este protegida"
-    echo "3. Opción 3"
+    echo "3. Generar pull request"
     echo ""
     echo "Reto 2"
     echo ""
@@ -25,8 +25,8 @@ manejar_opcion() {
            echo "";;
         2) echo "Buscando ramas a eliminar..."
            echo ""
-            python3 delete_branches.py;;
-        3) echo "Has seleccionado la Opción 3";;
+            bash delete_branches.sh;;
+        3) echo "Generando pull request...";;
         4) echo "Saliendo..."; exit 0
            echo "";;
         *) echo "Opción inválida";;
