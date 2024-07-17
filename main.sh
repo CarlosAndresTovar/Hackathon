@@ -13,8 +13,12 @@ mostrar_menu() {
     echo "3. Generar pull request"
     echo ""
     echo "Reto 2"
-    echo ""
-    echo "4. Salir"
+    echo "4. Despliegue de contenedor"
+    echo "5. Iniciar contenedor"
+    echo "6. Parar contenedor"
+    echo "7. Reiniciar contenedor"
+    echo "8. Ver recursos del contenedor"
+    echo "9. Salir"
     echo ""
 }
 
@@ -26,8 +30,19 @@ manejar_opcion() {
         2) echo "Buscando ramas a eliminar..."
            echo ""
             bash delete_branches.sh;;
-        3) echo "Generando pull request...";;
-        4) echo "Saliendo..."; exit 0
+        3) echo "Generando pull request..."
+            bash pull_request.sh;;
+        4) echo "Generando contenedor..."
+            bash generate_container.sh;;
+        5) echo "Iniciando contenedor..."
+            bash start_container.sh;;
+        6) echo "Parando contenedor..."
+            bash stop_container.sh;;
+        7) echo "Reiniciando contenedor..."
+            bash restart_container.sh;;
+        8) echo "Ver recursos del contenedor..."
+            bash log_resources.sh;;
+        9) echo "Saliendo..."; exit 0
            echo "";;
         *) echo "Opción inválida";;
     esac
