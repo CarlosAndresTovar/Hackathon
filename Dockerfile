@@ -14,6 +14,8 @@ ENV FLASK_APP=aplication_flask
 
 ENV FLASK_RUN_HOST=0.0.0.0
 
+ENV FLASK_DEBUG=1
+
 WORKDIR /opt/hackathon
 
 CMD ["flask", "run"]
