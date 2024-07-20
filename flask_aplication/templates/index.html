@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="{{ url_for('static', filename = 'css/style.css') }}">
+    <title>Hackathon BITS</title>
+</head>
+    <body>
+        <header>
+            <div class="container">
+                <div class="logo">
+                    <img src="https://d2sbaogcozkhdh.cloudfront.net/assets/prod/uploads/bits-americas-sas" alt="TechSolutions Logo">
+                    <span>Bits americas</span>
+                </div>
+                <nav>
+                    <ul>
+                        <li><a href="#inicio">Inicio</a></li>
+                        <li><a href="#servicios">Servicios</a></li>
+                        <li><a href="#proyectos">Proyectos</a></li>
+                        <li><a href="#sobre-nosotros">Sobre Nosotros</a></li>
+                        <li><a href="#contacto">Contacto</a></li>
+                    </ul>
+                </nav>
+            </div>
+        </header>
+
+        <main>
+            <section id="inicio" class="hero">
+                <picture>
+                    <img src="https://www.bitsamericas.com/sites/default/files/2024-03/transformacion-digital-min.webp" alt="MDN" />
+                </picture>
+                <div class="container">
+                    <h1>Soluciones Tecnológicas a tu Medida</h1>
+                    <p>Desarrollamos software personalizado para impulsar tu negocio al siguiente nivel</p>
+                    <a href="#contacto" class="cta-button">Solicita una Cotización</a>
+                </div>
+            </section>
+
+            <section id="servicios">
+                <div class="container">
+                    <h2>Nuestros Servicios</h2>
+                    <div class="servicios-grid">
+                        <div class="servicio">
+                            <i class="fas fa-laptop-code"></i>
+                            <h3>Desarrollo Web</h3>
+                            <p>Sitios web modernos, responsivos y optimizados para SEO</p>
+                        </div>
+                        <div class="servicio">
+                            <i class="fas fa-mobile-alt"></i>
+                            <h3>Aplicaciones Móviles</h3>
+                            <p>Apps nativas y multiplataforma para iOS y Android</p>
+                        </div>
+                        <div class="servicio">
+                            <i class="fas fa-cogs"></i>
+                            <h3>Software Empresarial</h3>
+                            <p>Soluciones a medida para optimizar procesos de negocio</p>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <section id="proyectos">
+                <div class="container">
+                    <h2>Proyectos Destacados</h2>
+                    <div class="proyectos-grid">
+                        <div class="proyecto">
+                            <img src="https://binauraldev.com/wp-content/uploads/2021/07/2A-BINAURAL-WEB.jpg" alt="Proyecto 1">
+                            <h3>App de Gestión de Inventario</h3>
+                            <p>Sistema integral para control de stock y ventas</p>
+                        </div>
+                        <div class="proyecto">
+                            <img src="https://www.images.cybrosys.com/blog/Uploads/BlogImage/elearning-in-odoo-14-enterprise.jpg" alt="Proyecto 2">
+                            <h3>Plataforma E-learning</h3>
+                            <p>Sistema de cursos online con videoconferencias</p>
+                        </div>
+                        <div class="proyecto">
+                            <img src="https://www.images.cybrosys.com/blog/Uploads/BlogImage/odoo-IoT-box-integration.png" alt="Proyecto 3">
+                            <h3>IoT para Smart Home</h3>
+                            <p>Aplicación para control de dispositivos domésticos</p>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <section id="sobre-nosotros">
+                <div class="container">
+                    <h2>Sobre Nosotros</h2>
+                    <div class="about-content">
+                        <img src="https://www.bitsamericas.com/sites/default/files/2024-04/nosotros-new.webp" alt="Equipo TechSolutions">
+                        <div>
+                            <p>En Bits americas, nos especializamos en crear soluciones tecnológicas personalizadas que se adaptan perfectamente a las necesidades únicas de cada cliente. Con más de 10 años de experiencia y un equipo de expertos apasionados, estamos comprometidos a impulsar el éxito de tu negocio a través de la innovación tecnológica.</p>
+                            <p>Nuestra misión es proporcionar soluciones de software de alta calidad que transformen la manera en que las empresas operan y crecen en la era digital.</p>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <section id="contacto">
+                <div class="container">
+                    <h2>Contacto</h2>
+                    <div class="contact-content">
+                        <form>
+                            <input type="text" placeholder="Nombre" required>
+                            <input type="email" placeholder="Email" required>
+                            <textarea placeholder="Mensaje" required></textarea>
+                            <button type="submit">Enviar</button>
+                        </form>
+                        <div class="contact-info">
+                            <h3>Información de Contacto</h3>
+                            <p><i class="fas fa-map-marker-alt"></i> 123 Calle Principal, Bogota, Colombia</p>
+                            <p><i class="fas fa-phone"></i> +1 234 567 890</p>
+                            <p><i class="fas fa-envelope"></i> info@bitsamericas.com</p>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </main>
+
+        <footer>
+            <div class="container">
+                <div class="footer-content">
+                    <div class="footer-section">
+                        <h3>Bits americas</h3>
+                        <p>Innovando para el futuro, hoy.</p>
+                    </div>
+                    <div class="footer-section">
+                        <h3>Enlaces Rápidos</h3>
+                        <ul>
+                            <li><a href="#inicio">Inicio</a></li>
+                            <li><a href="#servicios">Servicios</a></li>
+                            <li><a href="#proyectos">Proyectos</a></li>
+                            <li><a href="#sobre-nosotros">Sobre Nosotros</a></li>
+                        </ul>
+                    </div>
+                    <div class="footer-section">
+                        <h3>Síguenos</h3>
+                        <div class="social-icons">
+                            <a href="#"><i class="fab fa-facebook"></i></a>
+                            <a href="#"><i class="fab fa-twitter"></i></a>
+                            <a href="#"><i class="fab fa-linkedin"></i></a>
+                            <a href="#"><i class="fab fa-instagram"></i></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="footer-bottom">
+                    <p>&copy; 2024 Bits americas. Todos los derechos reservados.</p>
+                </div>
+            </div>
+        </footer>
+    </body>
+</html>
