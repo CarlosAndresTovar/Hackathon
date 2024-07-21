@@ -17,8 +17,10 @@ mostrar_menu() {
     echo "5. Iniciar contenedor"
     echo "6. Parar contenedor"
     echo "7. Reiniciar contenedor"
-    echo "8. Ver recursos del contenedor"
-    echo "9. Salir"
+    echo "8. Ver logs del contenedor"
+    echo "9. Ver recursos del contenedor"
+    echo "10. Eliminar contenedores que no se utilicen"
+    echo "11. Salir"
     echo ""
 }
 
@@ -33,16 +35,20 @@ manejar_opcion() {
         3) echo "Generando pull request..."
             bash Reto1/pull_request.sh;;
         4) echo "Generando contenedor..."
-            sh Reto2/generate_container.sh;;
+            bash Reto2/generate_container.sh;;
         5) echo "Iniciando contenedor..."
-            bash start_container.sh;;
+            bash Reto2/start_container.sh;;
         6) echo "Parando contenedor..."
-            bash stop_container.sh;;
+            bash Reto2/stop_container.sh;;
         7) echo "Reiniciando contenedor..."
-            bash restart_container.sh;;
+            bash Reto2/restart_container.sh;;
         8) echo "Ver recursos del contenedor..."
-            bash log_resources.sh;;
-        9) echo "Saliendo..."; exit 0
+            bash Reto2/resources.sh;;
+        9) echo "Ver logs del contenedor..."
+            bash Reto2/log.sh;;
+        10) echo "Eliminando contenedores..."
+            bash Reto2/delete_containers.sh;;
+        11) echo "Saliendo..."; exit 0
            echo "";;
         *) echo "Opción inválida";;
     esac

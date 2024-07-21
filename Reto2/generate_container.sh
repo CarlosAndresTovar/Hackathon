@@ -1,5 +1,7 @@
 #!/bin/bash
 
+cd ~/Desktop/hackaton/Hackathon/Reto2
+
 docker build -t container_hackathon:latest .
 
 docker rm -f containerHackathon
