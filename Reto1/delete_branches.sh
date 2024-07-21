@@ -1,6 +1,6 @@
 #!/bin/bash
 
-TOKEN='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'
+TOKEN='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'
 REPO='CarlosAndresTovar/Hackathon'
 
 listdelete=()
@@ -19,8 +19,6 @@ for variable in $response; do
         fi
     fi
 done
-
-echo "Ramas a eliminar: ${branchesDelete[@]}"
 
 for item in "${listdelete[@]}"; do
     curl -X DELETE -H "Authorization: token $TOKEN" \

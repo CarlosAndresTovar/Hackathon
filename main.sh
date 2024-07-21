@@ -8,8 +8,8 @@ mostrar_menu() {
     echo ""
     echo "Reto 1"
     echo ""
-    echo "1. Listar ramas y generar archivo plano"
-    echo "2. Eliminar ramas no tengan cambios hace mas de 2 dias y no este protegida"
+    echo "1. Listar ramas y generar archivo plano."
+    echo "2. Eliminar ramas que no tengan cambios hace mas de 2 dias y no este protegida."
     echo "3. Generar pull request"
     echo ""
     echo "Reto 2"
@@ -25,15 +25,15 @@ mostrar_menu() {
 manejar_opcion() {
     case $1 in
         1) echo "Listando ramas y generando archivo...\n"
-            sh list_branches.sh
+            sh Reto1/list_branches.sh
            echo "";;
         2) echo "Buscando ramas a eliminar..."
            echo ""
-            bash delete_branches.sh;;
+            bash Reto1/delete_branches.sh;;
         3) echo "Generando pull request..."
-            bash pull_request.sh;;
+            bash Reto1/pull_request.sh;;
         4) echo "Generando contenedor..."
-            bash generate_container.sh;;
+            sh Reto2/generate_container.sh;;
         5) echo "Iniciando contenedor..."
             bash start_container.sh;;
         6) echo "Parando contenedor..."

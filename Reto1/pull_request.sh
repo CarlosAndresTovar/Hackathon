@@ -1,6 +1,6 @@
 #!/bin/bash
 
-TOKEN='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'
+TOKEN='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'
 REPO='CarlosAndresTovar/Hackathon'
 
 while :
@@ -10,7 +10,7 @@ do
         title=$isCorrect
         break
     else
-        echo "El titulo no cumple con la estructura requerida: "
+        echo "El titulo no cumple con la estructura requerida, Ejemplo #1234"
     fi
 done
 
