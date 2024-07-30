@@ -5,5 +5,3 @@ echo ""
 echo ""
 docker stats --no-stream containerHackathon
 echo ""
-echo ""
-docker logs --details containerHackathon

@@ -8,8 +8,8 @@ mostrar_menu() {
     echo ""
     echo "Reto 1"
     echo ""
-    echo "1. Listar ramas y generar archivo plano"
-    echo "2. Eliminar ramas no tengan cambios hace mas de 2 dias y no este protegida"
+    echo "1. Listar ramas y generar archivo plano."
+    echo "2. Eliminar ramas que no tengan cambios hace mas de 2 dias y no este protegida."
     echo "3. Generar pull request"
     echo ""
     echo "Reto 2"
@@ -17,32 +17,38 @@ mostrar_menu() {
     echo "5. Iniciar contenedor"
     echo "6. Parar contenedor"
     echo "7. Reiniciar contenedor"
-    echo "8. Ver recursos del contenedor"
-    echo "9. Salir"
+    echo "8. Ver logs del contenedor"
+    echo "9. Ver recursos del contenedor"
+    echo "10. Eliminar contenedores que no se utilicen"
+    echo "11. Salir"
     echo ""
 }
 
 manejar_opcion() {
     case $1 in
         1) echo "Listando ramas y generando archivo...\n"
-            sh list_branches.sh
+            sh Reto1/list_branches.sh
            echo "";;
         2) echo "Buscando ramas a eliminar..."
            echo ""
-            bash delete_branches.sh;;
+            bash Reto1/delete_branches.sh;;
         3) echo "Generando pull request..."
-            bash pull_request.sh;;
+            bash Reto1/pull_request.sh;;
         4) echo "Generando contenedor..."
-            bash generate_container.sh;;
+            bash Reto2/generate_container.sh;;
         5) echo "Iniciando contenedor..."
-            bash start_container.sh;;
+            bash Reto2/start_container.sh;;
         6) echo "Parando contenedor..."
-            bash stop_container.sh;;
+            bash Reto2/stop_container.sh;;
         7) echo "Reiniciando contenedor..."
-            bash restart_container.sh;;
+            bash Reto2/restart_container.sh;;
         8) echo "Ver recursos del contenedor..."
-            bash log_resources.sh;;
-        9) echo "Saliendo..."; exit 0
+            bash Reto2/resources.sh;;
+        9) echo "Ver logs del contenedor..."
+            bash Reto2/log.sh;;
+        10) echo "Eliminando contenedores..."
+            bash Reto2/delete_containers.sh;;
+        11) echo "Saliendo..."; exit 0
            echo "";;
         *) echo "Opción inválida";;
     esac
